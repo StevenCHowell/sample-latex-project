@@ -1,0 +1,35 @@
+% LaTeX Template for short student reports.
+% Citations should be in bibtex format and go in references.bib
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+\usepackage[pdftex,bookmarks,colorlinks,breaklinks]{hyperref}
+\hypersetup{linkcolor=black,citecolor=black,filecolor=black,urlcolor=black} % black links, for printed output
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{memhfixc}
+\usepackage{listings}
+\usepackage{pdfsync}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\title{My Project Title}
+\author{First Last}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\include{introduction}
+\include{section_1}
+\include{section_2}
+\include{section_3}
+\include{section_4}
+
+\bibliographystyle{abbrv}
+% \bibliography{references}  % need to put bibtex references in references.bib
+\end{document}
